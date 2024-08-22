@@ -9,14 +9,12 @@ document.addEventListener("DOMContentLoaded" , ()=> {
     //페이지가 로드 된후 실행
     const menu = document.getElementById('menu');  //<iframe id="menu">
     
-   /*  menu.addEventListener("load" , ()=>{
-        //부모페이지에서 자식 아이프레임의 콘텐츠에 접근가능해야한다.
-        const nav = menu.contentDocument.querySelectorAll("nav a");// 각각각 메뉴 <a href="spring">
-        
-                i.classList.add('act');
-        });
-    }); */
-
-
+    menu.addEventListener("load" , ()=>{
+        if( i !== null && ! !== "") {
+            //부모페이지에서 자식 아이프레임의 콘텐츠에 접근가능해야한다.
+            const $a = menu.contentDocument.querySelectorAll("nav a");// 각각각 메뉴 <a href="spring">        
+            $a[i].classList.add('act');
+        }        
+     });
 
 }); //end....................
