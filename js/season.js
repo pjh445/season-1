@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded" , ()=> {   
+    //링크가 이동된 후에 해당 페이지로 ?p0 인수를 전달한다
+    const para = new URLSearchParams(window.location.search); //?p0 (쿼리스트링부분)
     
 
     //페이지가 로드 된후 실행
