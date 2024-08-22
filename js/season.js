@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded" , ()=> {
     const menu = document.getElementById('menu');  //<iframe id="menu">
     
     menu.addEventListener("load" , ()=>{
-        if( i !== null && ! !== "") {
+        if( i !== null &&  i !== "") {
             //부모페이지에서 자식 아이프레임의 콘텐츠에 접근가능해야한다.
             const $a = menu.contentDocument.querySelectorAll("nav a");// 각각각 메뉴 <a href="spring">        
             $a[i].classList.add('act');
